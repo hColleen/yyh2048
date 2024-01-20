@@ -14,7 +14,7 @@ A variation on the classic 2048 game using characters from the anime Yu Yu Hakus
 4. Use the arrow keys to move the tiles around
 
 ## TODO
-- [ ] Update numbers to characters
+- [X] Update numbers to characters
 - [ ] Use local memory for Personal Best
 - [ ] Conditional background?
 - [ ] Live demo
