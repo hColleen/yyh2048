@@ -15,6 +15,6 @@ A variation on the classic 2048 game using characters from the anime Yu Yu Hakus
 
 ## TODO
 - [X] Update numbers to characters
-- [ ] Use local memory for Personal Best
+- [X] Use local memory for Personal Best
 - [ ] Conditional background?
 - [x] Live demo at [https://hcolleen.github.io/yyh2048/](https://hcolleen.github.io/yyh2048/)

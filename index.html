@@ -5,15 +5,16 @@
     <script type="text/javascript" src="2048.js"></script>
 </head>
 <body>
-
-<header>Join the charcters to get the King!</header>
 <div class="cover"></div>
 <div class="container">
-    <div class="logo">2048</div>
+    <div class="logo"><img class = "yyhlogo" src ="imgs/yyhlogo.png" /> 2048</div><br>
+    <div class ="header">Join the charcters to get the King!</div>
     <div class="scoreBar">
-        <label style="position: relative; top:-13px;">score:</label>
+        <div class = "currentScore"><label style="position: relative; top:-13px;">score:</label>
         <label id="score"> 0</label>
-        <div id="addScore"></div>
+        <div id="addScore"></div><br></div>
+        <div class = "bestScore"><label style="position: relative; top: -13px;">best score:</label>
+        <label id ="bestScoreText"> 0</label></div>
     </div>
     <div id="stage"></div>
 </div>

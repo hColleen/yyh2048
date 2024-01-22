@@ -4,6 +4,12 @@ html{
     -khtml-user-select: none;
     user-select: none;
 }
+.header{
+    color:aqua;
+    font-family: "microsoft yahei";
+    font-size: 30px;
+    justify-content: center;
+}
 
 p{
     color: black;
@@ -33,16 +39,21 @@ body{
  }
  
  .logo{
-     width:40%;
-     font-size: 70px;
+     width:auto;
+     font-size: 36px;
      font-weight: bold;
      color: #d13100;
-     float: left;
      position: relative;
+     margin-top: 10px;
  }
+ .yyhlogo{
+    height: 75px;
+    width: 60%;
+ }
+
+
  .scoreBar{
-     width: 50%;
-     float:right;
+     width: auto;
      background: #fff;
      color: #111;
 
@@ -64,7 +75,15 @@ body{
  #score{
      font-size: 50px;
  }
- 
+ .currentScore{
+    float: left;
+ }
+ #bestScoreText{
+    font-size: 50px;
+}
+.bestScore{
+    float: right;
+}
  #addScore{
      position: absolute;
      bottom: 0px;
@@ -72,7 +91,7 @@ body{
      color:#999;
      opacity: .8;
      top:4px;
-     right: 0;
+     right: 275px;
  }
 #addScore.show{
     opacity: .8;

@@ -1,12 +1,12 @@
 //tutorial from https://medium.com/@aswingiftson007/2048-game-in-html-and-javascript-c6cc63d2698f
-
-
 var gameObj = {
     points: {
         score: 0,
+        highScore: 0,
         history: [],
         status: 1
     },
+    
     stage: [],
     intiStage: function () {
         for (var cell = 0; cell < 4; cell++) {
@@ -32,6 +32,7 @@ var gameObj = {
         }
         return emptyList;
     },
+    
     newBox: function () {
         var _this = this;
         
@@ -102,8 +103,8 @@ var gameObj = {
         scoreBar.textContent=this.points.score;
         return obj2.boxObj.value;
 
-
     },
+    
     clear:function(x,y){
         var can=0;
       for(var i=0;i<4;i++){
@@ -175,6 +176,13 @@ var gameObj = {
                 addscore.className="hide";
             },500);
         }
+        var highScore = localStorage.getItem("highScore");
+        if (highScore === null||this.points.score > highScore) {
+            localStorage.setItem("highScore", this.points.score);
+        }
+        var highScoreBar = document.getElementById('bestScoreText');
+        highScoreBar.innerText=highScore;
+        highScoreBar.textContent=highScore;
         if(can){
             this.newBox();
         }
